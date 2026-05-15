@@ -61,11 +61,17 @@ function TravelList() {
       <div className="travel-column">
         <div className="container-item-list">
           {travel.map(plan => (
-            <div className="item-list-image-description-days-price" key={plan.id}>
+            <div
+              className="item-list-image-description-days-price"
+              key={plan.id}
+            >
               <TravelPlanCard plan={plan} />
 
               <div className="plan-actions">
-                <button onClick={() => deleteTravel(plan.id)} className="btn-delete">
+                <button
+                  onClick={() => deleteTravel(plan.id)}
+                  className="btn-delete"
+                >
                   Delete 🗑
                 </button>
                 <button
